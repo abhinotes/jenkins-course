@@ -16,7 +16,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('coolmagnet/jenkin-node-js-demo')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('6f1ac894-c572-4559-b25d-401497cd8b39')
+            registryCredentials('dockerhub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
